@@ -85,7 +85,7 @@ public class DialogueManager : MonoBehaviour
     {
         toShow = currentText[0];
         // Eviter d'attendre pour les espaces
-        if(toShow == ' ' && currentText.Count > 0)
+        if(toShow == ' ' && currentText.Count > 1)
         {
             DialogueText.text += toShow;
             currentText.RemoveAt(0);
